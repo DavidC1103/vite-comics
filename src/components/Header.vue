@@ -1,4 +1,3 @@
-
 <script>
 import menuTop from '../js/menuTop.js';
 
@@ -34,7 +33,7 @@ import menuTop from '../js/menuTop.js';
 
 <style lang="scss">
 @use'../scss/general.scss' as *;
-@import '../scss/color.scss';
+@import '../scss/color.scss' ;
 @import'../scss/variables.scss';
 
    header{
@@ -43,11 +42,8 @@ import menuTop from '../js/menuTop.js';
     margin-top: 40px;
     display: flex;
     align-items: center;
-
         img{
-
         width: 70px;
-
         };
    }
 </style>

@@ -1,4 +1,7 @@
+
 .header-menu{
+    @import './color.scss';
+
     ul{
         display: flex;
         margin-left: 5px;
@@ -16,4 +19,35 @@
             }
     
     }
+}
+
+.footer-top-menu{
+    @import './color.scss';
+    width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    h4{
+        color: white;
+        margin-bottom: 10px;
+    }
+    
+    li{
+        list-style: none;
+    
+        a{
+            font-size: 12px;
+            text-decoration: none;
+            color: $tertiary-color ;
+            line-height: 1.4rem;
+        }
+    }
+    .dc-me{
+        margin-right: 30px;
+    }
+
+    .dc-mt{
+        margin-top: 17px;
+    }
+    
+    
 }

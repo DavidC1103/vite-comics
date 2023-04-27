@@ -1,7 +1,7 @@
   <script>
     import Header from '../src/components/Header.vue'
     import Main from '../src/components/Main.vue'
-    import Footer from '../src/components/Footer.vue'
+    import Footer from './components/FooterTop.vue'
     
     export default{
       name : 'App',
@@ -21,6 +21,7 @@
 
 <template>
   <Header />
+  <Footer />
 </template>
 
 
