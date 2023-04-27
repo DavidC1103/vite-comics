@@ -1,10 +1,12 @@
 
 <script>
+import menuTop from '../js/menuTop.js';
+
     export default {
         name :'Header',
         data(){
             return{
-                
+                menuTop,
             }
         }
     
@@ -12,10 +14,18 @@
 </script>
 
 <template>
-    <header>
+    <header class="header-menu">
         <div class="dc-container">
             <img src="../assets/img/dc-logo.png" alt="">
-            <div></div>
+            <div>
+                <ul>
+                    <li 
+                     v-for="(menu, index) in menuTop"
+                    :key="index">
+                        <a href="">{{ menu.text }}</a>
+                    </li>
+                </ul>
+            </div>
         </div>
 
     </header>
@@ -23,7 +33,9 @@
 
 
 <style lang="scss">
-@use'../scss/general.scss';
+@use'../scss/general.scss' as *;
+@import '../scss/color.scss';
+@import'../scss/variables.scss';
 
    header{
     background-color:white;
@@ -37,6 +49,5 @@
         width: 70px;
 
         };
-        
    }
 </style>
