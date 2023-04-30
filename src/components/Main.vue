@@ -12,6 +12,9 @@
 
 <template>
     <main>
+        <div class="jumbotron">
+            <img src="../assets/img/jumbotron.jpg" alt="">
+        </div>
 
     </main>
   
@@ -20,7 +23,11 @@
 
 <style lang="scss">
     main{
-        height: 200px;
+        height: 700px;
+    }
+    .jumbotron{
+    height: 400px;
+    overflow: hidden;
     }
 
 
